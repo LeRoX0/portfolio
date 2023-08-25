@@ -1,0 +1,104 @@
+.experience{
+    color: white;
+    margin:200px 0;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    clip-path: polygon(0 100%, 100% 90% , 100% 0 , 0 10%);
+    background-color: rgba(217, 217, 217, 0.13);
+}
+
+.experience .title{
+   text-align: center;
+   font-size: 1.6rem;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.experience .title p{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: rgb(122, 122, 122);
+    font-weight: 700;
+}
+
+.experience .experience-cards{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    
+}
+
+.card-container{
+    margin: 0 60px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+.card-container::after{
+   content: url('../../assets/circle.png');
+ 
+   top: -50px;
+   
+    width: 50rem;
+    height: 50rem;
+    /* border-radius: 50%; */
+    /* background-color: rgba(112, 135, 255, 1); */
+    position: absolute;
+    z-index: -6;
+}
+.experience .experience-cards .card-container .card{
+    /* flex: 1; */
+
+    transition: all 0.3s ease;
+ border-radius: 45px;
+ height: 362px;
+ width: 366px;
+ background-color: rgba(217, 217, 217, 0.1);
+ text-align: center;
+ backdrop-filter: blur(42px);
+}
+
+.card img{
+    width: 55px;
+    
+    position: absolute;
+    opacity: 70%;
+    padding: 5px;
+  
+    top: 23px;
+    left: 23px;
+}
+.stroke{
+    background-color: transparent;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 12;
+    stroke-linecap: round;
+    transition: 1s;
+    stroke-dasharray: 50 300;
+}
+.stroke text{
+    stroke: none;
+ 
+}
+.percent{
+    font-weight: 100;
+}
+
+
+/* @media screen and (max-width: 420px) {
+    .experience{
+        height: 2000px;
+    }     
+    .experience .card{
+        margin-top: 20px;
+    }  
+
+} */
