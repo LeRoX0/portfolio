@@ -1,6 +1,4 @@
-import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import classes from './Rating.module.css'
 import 'swiper/css';
 import img from '../../assets/lerox.jpg'
 import rating from '../../assets/rating.png'
@@ -10,7 +8,6 @@ const Container = styled(Swiper)`
  width: 1000px;
  display: flex;
  justify: content;
-
 `
 const Swipe = styled(SwiperSlide)`
  & .comment{

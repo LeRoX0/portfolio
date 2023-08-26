@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import classes from './About.module.css'
 import { IconCurrentLocation } from '@tabler/icons-react'
 const dummyD = [
@@ -7,16 +7,12 @@ const dummyD = [
     {title:'Company',msg:'more than 15 customers'},
 ]
 const About = () => {
-  const [data,setData] = useState(dummyD)
+  const [data] = useState(dummyD)
   const About = useRef<HTMLDivElement | null>(null)
   useEffect(()=>{
     window.onscroll = ()=>{
-
         About.current!.style.opacity = '1';
         About.current!.style.transform = 'translate(0px)';
-
-
-
     }
   })
   return (

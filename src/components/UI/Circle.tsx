@@ -1,7 +1,7 @@
 import React from 'react'
 import circle from '../../assets/circle.png'
 import styled from 'styled-components'
-import { StringLiteral } from 'typescript';
+
 type prop = {
   top?:string;
   left?:string;

@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import classes from './App.module.css';
 import Header from './components/Header/Header';
-import circle from './assets/circle.png'
+
 import Circle from './components/UI/Circle';
 import effect from './assets/effect.png'
 import About from './components/About/About';
 import Experience from './components/MyExperience/Experience';
-import FeedBacks from './components/FeedBacks/FeedBacks';
+
 import LoaderSpinner from './components/UI/LoaderSpinner';
 import Footer from './components/Footer/Footer';
-import Rating from './components/rating/rating';
+import Rating from './components/rating/Rating';
 function App() {
   const [isLoading, setIsLoading] = useState(true)
   useEffect(()=>{
