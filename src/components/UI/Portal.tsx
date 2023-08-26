@@ -1,5 +1,5 @@
 import { createPortal } from 'react-dom';
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { styled } from 'styled-components';
 import { useDispatch } from 'react-redux';
 import { hide } from '../../store/PortalReduce';

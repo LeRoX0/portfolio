@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import js from '../../assets/languages/technology.png'
 import classes from './Experience.module.css'
 import { useDispatch, useSelector } from 'react-redux'
-import { RootState, counterPercent } from '../../store/Redux'
+import { RootState, counterPercent } from '../../store/redux'
 
 const Experience = () => {
   const [scrolled, setScrolled] = useState(false);

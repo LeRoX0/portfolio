@@ -1,4 +1,4 @@
-import React, {useEffect, useState,useRef} from 'react'
+import {useEffect, useState,useRef} from 'react'
 import classes from './Header.module.css'
 
 import ReactTyped from "react-typed";
@@ -9,9 +9,8 @@ import { IconBrandDiscord, IconBrandTwitter } from '@tabler/icons-react';
 import Portal from '../UI/Portal';
 import { useDispatch, useSelector } from 'react-redux';
 import { show } from '../../store/PortalReduce';
-import { RootState } from '../../store/Redux';
+import { RootState } from '../../store/redux';
 const Header = () => {
-  const [title, setTitle] = useState('')
   const showState = useSelector((state:RootState)=>{
     return state.portal.show
   })
