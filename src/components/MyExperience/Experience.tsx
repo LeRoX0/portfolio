@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import js from '../../assets/languages/technology.png'
 import classes from './Experience.module.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState, counterPercent } from '../../store/redux'
 
 const Experience = () => {
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
   const dispatch = useDispatch()
   const svg = useRef<any>(null)
   const data = useSelector((state:RootState)=>{
@@ -25,10 +25,10 @@ const Experience = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 1200) {
-        setScrolled(true);
+        // setScrolled(true);
         svg.current!.style.strokeDasharray = '400 700';  
       } else {
-        setScrolled(false);
+        // setScrolled(false);
       }
     };
     window.addEventListener('scroll', handleScroll);

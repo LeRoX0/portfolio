@@ -1,4 +1,4 @@
-import {useEffect, useState,useRef} from 'react'
+import {useEffect,useRef} from 'react'
 import classes from './Header.module.css'
 
 import ReactTyped from "react-typed";
